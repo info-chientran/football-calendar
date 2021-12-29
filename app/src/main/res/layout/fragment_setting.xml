@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".SettingFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="54dp"
+        android:text="@string/setting"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="118dp"
+        android:layout_marginEnd="20dp"
+        android:layout_height="540dp"
+        android:background="@drawable/bgr_grv_setting">
+
+        <LinearLayout
+            android:id="@+id/accountSetting"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_account"
+                android:contentDescription="@string/account" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:textSize="18sp"
+                android:text="@string/account"
+                android:textStyle="bold"
+                android:textColor="@color/edit_text_gray"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:background="@color/edit_text_gray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:contentDescription="@string/img"/>
+
+        <TextView
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="18dp"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:textColor="@color/text_gray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/setting"/>
+
+        <ExpandableListView
+            android:id="@+id/lv_Setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</FrameLayout>
