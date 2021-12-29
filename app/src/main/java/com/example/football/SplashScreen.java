@@ -2,6 +2,7 @@ package com.example.football;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -10,9 +11,8 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
+@SuppressLint("CustomSplashScreen")
 public class SplashScreen extends AppCompatActivity {
-
-    private static int SPLASH_SCREEN = 2500;
 
     //Variables
     Animation topAnim, bottomAnim;
@@ -36,13 +36,11 @@ public class SplashScreen extends AppCompatActivity {
         imageFootball.setAnimation(topAnim);
         imageStar.setAnimation(bottomAnim);
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent intent = new Intent(SplashScreen.this, Login.class);
-                startActivity(intent);
-                finish();
-            }
+        int SPLASH_SCREEN = 2500;
+        new Handler().postDelayed(() -> {
+            Intent intent = new Intent(SplashScreen.this, MainActivity.class);
+            startActivity(intent);
+            finish();
         }, SPLASH_SCREEN);
     }
 }

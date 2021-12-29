@@ -16,26 +16,41 @@ public class HomeFragment extends Fragment {
     RecyclerView recyclerView;
     ArrayList<ItemObjHome> itemObjHomes;
     HomeAdapter homeAdapter;
-    String[] titleLeague;
-    int[] imageLeagueId;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        recyclerView = recyclerView.findViewById(R.id.rcvListCalendar);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
     }
 
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
+        recyclerView = view.findViewById(R.id.rcvListCalendar);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        recyclerView.setHasFixedSize(true);
 
-        //Time today
-//        System.currentTimeMillis();
+        itemObjHomes = new ArrayList<>();
+
+        ItemObjHome leagueOne = new ItemObjHome(R.drawable.premier_league, "Premier League");
+        itemObjHomes.add(leagueOne);
+
+        ItemObjHome leagueTwo = new ItemObjHome(R.drawable.champions_league, "Champions League");
+        itemObjHomes.add(leagueTwo);
+
+        ItemObjHome leagueThree = new ItemObjHome(R.drawable.bundes_liga, "Bundes Liga");
+        itemObjHomes.add(leagueThree);
+
+        ItemObjHome LeagueFour = new ItemObjHome(R.drawable.la_liga, "La liga");
+        itemObjHomes.add(LeagueFour);
+
+        recyclerView.setAdapter(new HomeAdapter(itemObjHomes));
+
         return view;
-    }
 
+    }
 }
+
+//Time
+//        System.currentTimeMillis();
