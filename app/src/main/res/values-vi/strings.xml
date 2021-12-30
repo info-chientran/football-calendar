@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Bóng đá</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Xin Chào</string>
+    <string name="setting">CÀI ĐẶT</string>
+    <string name="notification">THÔNG BÁO</string>
+    <string name="football_calendar">LỊCH BÓNG ĐÁ</string>
+    <string name="today">HÔM NAY</string>
+    <string name="today_">Hôm nay</string>
+    <string name="_24_12_2021">24/12/2021</string>
+    <string name="todo">TODO</string>
+    <string name="language">Ngôn ngữ</string>
+    <string name="english">Tiếng anh</string>
+    <string name="login">Đăng nhập</string>
+    <string name="password">Mật Khẩu</string>
+    <string name="sign_up">Tạo tài khoản</string>
+    <string name="sign_in">Đăng nhập</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Nhập lại mật khẩu</string>
+    <string name="don_t_have_any_account">Chưa có tài khoản?</string>
+    <string name="more">Các trận đấu khác</string>
+    <string name="account">"Tài khoản "</string>
+    <string name="img">img</string>
+    <string name="premier_league">Premier League</string>
+    <string name="calendar">"Calendar "</string>
+    <string name="this_match" translatable="false">Trận đấu sẽ diễn ra sau 5 phút.</string>
+    <string name="already_have_any_account">Bạn đã có tài khoản.</string>
+</resources>

@@ -18,8 +18,9 @@
         android:id="@+id/titleLeague"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/imgLeague"
         android:text="@string/premier_league"
         android:textColor="@color/black"
         android:textSize="16sp" />

@@ -31,6 +31,11 @@ public class MainActivity extends AppCompatActivity {
 
         bottomNavigationView = findViewById(R.id.bottomNavigation);
         loadFragment(new HomeFragment());
+
+//        //Item calendar click
+//        bottomNavigationView.setSelectedItemId(R.id.nav_Notification);
+//        //Add data
+
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {

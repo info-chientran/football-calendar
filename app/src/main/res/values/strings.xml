@@ -23,4 +23,7 @@
     <string name="img">img</string>
     <string name="premier_league">Premier League</string>
     <string name="calendar">Calendar</string>
+    <string name="vs" translatable="false">vs</string>
+    <string name="this_match">This match will take place in 5 minutes!</string>
+    <string name="already_have_any_account">already have any account</string>
 </resources>

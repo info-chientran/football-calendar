@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bgr_notification"
+    android:layout_marginBottom="20dp"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/imgLeagueOne"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="5dp"
+        android:contentDescription="@string/img"
+        android:src="@drawable/chelsea" />
+
+    <TextView
+        android:id="@+id/textVs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/left"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/imgLeagueOne"
+        android:text="@string/vs"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imgLeagueTwo"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/textVs"
+        android:contentDescription="@string/img"
+        android:src="@drawable/manchester_city" />
+
+    <TextView
+        android:id="@+id/titleLeague"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/imgLeagueTwo"
+        android:text="@string/this_match"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+</RelativeLayout>

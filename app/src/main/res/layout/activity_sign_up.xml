@@ -121,7 +121,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/don_t_have_any_account"
+                android:text="@string/already_have_any_account"
                 android:textColor="@color/gray"
                 android:textSize="16sp" />
 
