@@ -35,7 +35,7 @@ public class SettingFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_setting, container, false);
 
-        //switch screen
+        //switch screen to login
 //        view.findViewById(R.id.accountSetting).setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
@@ -44,28 +44,28 @@ public class SettingFragment extends Fragment {
 //            }
 //        });
 
-        listView = view.findViewById(R.id.lv_Setting);
-        ListItem = getListItem();
-        ListGroup = new ArrayList<>(ListItem.keySet());
-        settingAdapter = new SettingAdapter(ListGroup, ListItem);
-        listView.setAdapter(settingAdapter);
+//        listView = view.findViewById(R.id.lv_Setting);
+//        ListItem = getListItem();
+//        ListGroup = new ArrayList<>(ListItem.keySet());
+//        settingAdapter = new SettingAdapter(ListGroup, ListItem);
+//        listView.setAdapter(settingAdapter);
 
 
         return view;
     }
-    private Map<GroupObj, List<ItemObjSetting>> getListItem(){
-        Map<GroupObj, List<ItemObjSetting>>listMap = new HashMap<>();
-        GroupObj groupobject1 = new GroupObj (1,"Language");
-        GroupObj groupobject2 = new GroupObj (2,"Theme");
-
-        List<ItemObjSetting> objectlist1 = new ArrayList<>();
-        List<ItemObjSetting> objectlist2 = new ArrayList<>();
-        objectlist1.add(new ItemObjSetting(1,"English"));
-        objectlist1.add(new ItemObjSetting(2,"Việt Nam"));
-        objectlist2.add(new ItemObjSetting(3,"Light"));
-        objectlist2.add(new ItemObjSetting(4,"Dark"));
-        listMap.put(groupobject1,objectlist1);
-        listMap.put(groupobject2,objectlist2);
-        return listMap;
-    }
+//    private Map<GroupObj, List<ItemObjSetting>> getListItem(){
+//        Map<GroupObj, List<ItemObjSetting>>listMap = new HashMap<>();
+//        GroupObj groupobject1 = new GroupObj (1,"Language");
+//        GroupObj groupobject2 = new GroupObj (1,"Theme");
+//
+//        List<ItemObjSetting> objectlist1 = new ArrayList<>();
+//        List<ItemObjSetting> objectlist2 = new ArrayList<>();
+//        objectlist1.add(new ItemObjSetting(1,"English"));
+//        objectlist1.add(new ItemObjSetting(1,"Việt Nam"));
+////        objectlist2.add(new ItemObjSetting(3,"Light"));
+////        objectlist2.add(new ItemObjSetting(4,"Dark"));
+//        listMap.put(groupobject1,objectlist1);
+//        listMap.put(groupobject2,objectlist2);
+//        return listMap;
+//    }
 }

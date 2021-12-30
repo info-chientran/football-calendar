@@ -62,8 +62,7 @@ public class SettingAdapter extends BaseExpandableListAdapter {
         return false;
     }
 
-    //text_Setting_Group
-    //lv_group
+    //list view group
     @Override
     public View getGroupView(int groupPosition, boolean b, View convertView, ViewGroup viewGroup) {
         if (convertView == null){
@@ -75,8 +74,7 @@ public class SettingAdapter extends BaseExpandableListAdapter {
         return convertView;
     }
 
-    //text_Setting_Item
-    //language_group
+    //language
     @Override
     public View getChildView(int groupPosition, int childPosition, boolean b, View convertView, ViewGroup viewGroup) {
         if (convertView == null){
