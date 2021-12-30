@@ -21,8 +21,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:background="@drawable/bgr_nav"
-        app:itemTextColor="@color/checked"
         app:itemIconTint="@color/checked"
+        app:itemTextColor="@color/checked"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:menu="@menu/menu_bottom"/>
+        app:menu="@menu/menu_bottom" />
 </LinearLayout>

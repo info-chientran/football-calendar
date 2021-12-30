@@ -7,7 +7,7 @@
     <string name="football_calendar">LỊCH BÓNG ĐÁ</string>
     <string name="today">HÔM NAY</string>
     <string name="today_">Hôm nay</string>
-    <string name="_24_12_2021">24/12/2021</string>
+    <string name="time">30/12/2021</string>
     <string name="todo">TODO</string>
     <string name="language">Ngôn ngữ</string>
     <string name="english">Tiếng anh</string>
@@ -18,11 +18,14 @@
     <string name="email">Email</string>
     <string name="confirm_password">Nhập lại mật khẩu</string>
     <string name="don_t_have_any_account">Chưa có tài khoản?</string>
-    <string name="more">Các trận đấu khác</string>
     <string name="account">"Tài khoản "</string>
     <string name="img">img</string>
     <string name="premier_league">Premier League</string>
     <string name="calendar">"Calendar "</string>
     <string name="this_match" translatable="false">Trận đấu sẽ diễn ra sau 5 phút.</string>
     <string name="already_have_any_account">Bạn đã có tài khoản.</string>
+    <string name="home">"Trang chủ "</string>
+    <string name="notification_">Thông báo</string>
+    <string name="setting_">Cài đặt</string>
+    <string name="more">Khác</string>
 </resources>

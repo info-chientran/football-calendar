@@ -7,7 +7,6 @@
     <string name="football_calendar">FOOTBALL CALENDAR</string>
     <string name="today">TODAY</string>
     <string name="today_">Today</string>
-    <string name="_24_12_2021">24/12/2021</string>
     <string name="todo">TODO</string>
     <string name="language">Language</string>
     <string name="english">English</string>
@@ -26,4 +25,8 @@
     <string name="vs" translatable="false">vs</string>
     <string name="this_match">This match will take place in 5 minutes!</string>
     <string name="already_have_any_account">already have any account</string>
+    <string name="time">30/12/2021</string>
+    <string name="home">Home</string>
+    <string name="notification_">Notification</string>
+    <string name="setting_">Setting</string>
 </resources>
